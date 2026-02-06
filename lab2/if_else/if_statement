@@ -1,0 +1,32 @@
+#1
+a = 20
+b = 4
+if a / b == 5:
+    print("YES")
+
+#2
+bollean = False
+if bollean:
+    print("Hello")
+else:
+    print("Goodbye")
+
+#3
+year_of_uni = 1
+if year_of_uni >= 1:
+  print("Welcome to KBTU freshman")
+  print("We will help you ")
+
+#4
+if 34 >= 33:
+ print("Correct")
+else:
+   print("Try again")
+
+#5
+my_games = ["DDLC", "Spongebob", "MLP"]
+if ("DDLC" in my_games):
+   print("YES THATS MY GAME")
+
+
+

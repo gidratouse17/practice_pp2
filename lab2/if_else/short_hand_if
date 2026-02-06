@@ -1,0 +1,25 @@
+#1
+c = 21
+d = 22
+print("C") if c > d else print("D")
+
+#2
+i = 45
+j = 56
+if i == j: print("i equal j")
+
+#3
+r = "Malika"
+p = "Aliya" 
+namee = r if len(r) > len(p) else p
+print("Hello,", namee)
+
+#4
+m = 777
+n = 222
+print("M") if m > n else print("=") if m == n else print("N")
+
+#5
+word = "banana"
+boool = word if word else "apple"
+print("Lets eat", boool)
