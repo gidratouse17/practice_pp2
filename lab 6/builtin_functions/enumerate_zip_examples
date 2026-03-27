@@ -1,0 +1,24 @@
+#1
+games = ["Omori", "Undertale", "Danganronpa"]
+for ind, g in enumerate(games):
+    print(f"Number{ind + 1} is - {g}!")
+
+#2
+bs_players = ["Sayori", "Hoshii", "Arn1tM"]
+num_primes = [8, 14, 32]
+for nick, num in zip(bs_players, num_primes):
+    print(f"{nick} has {num} primes")
+
+#3
+chocolates = ["Snickers", "Babyfox", "Ozera"]
+prices = [659, 379, 459]
+
+for choco, price in zip(chocolates, prices):
+    print(f"{choco} costs {price} tenge, wow.")
+
+#4
+students = ["Malika", "Sultan", "Igor"]
+scores = [100, 0.1, 0]
+
+for i, (name, points) in enumerate(zip(students, scores), start=1):
+    print(f"{i}) {name} has {points} poits total for Discrete structures")
