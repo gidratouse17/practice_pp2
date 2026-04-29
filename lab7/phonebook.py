@@ -19,7 +19,7 @@ def create_table():
     conn.commit()
     cur.close()
     conn.close()
-    print("✅ Table created (or already exists)")
+    print("Table created (or already exists)")
 
 
 # 2. Insert from CSV
@@ -38,7 +38,7 @@ def insert_from_csv(filename="contacts.csv"):
     conn.commit()
     cur.close()
     conn.close()
-    print("✅ Data loaded from CSV")
+    print("Data loaded from CSV")
 
 
 # 3. Insert from console
@@ -53,10 +53,10 @@ def insert_from_console():
             VALUES (%s, %s);
         """, (name, phone))
         conn.commit()
-        print("✅ Contact added")
+        print("Contact added")
     except psycopg2.errors.UniqueViolation:
         conn.rollback()
-        print("❌ This phone number already exists")
+        print("This phone number already exists")
     finally:
         cur.close()
         conn.close()
@@ -86,20 +86,20 @@ def update_contact():
             UPDATE phonebook SET phone = %s WHERE first_name = %s;
         """, (new_phone, name))
     else:
-        print("❌ Invalid choice")
+        print("Invalid choice")
         cur.close()
         conn.close()
         return
 
     conn.commit()
-    print("✅ Contact updated")
+    print("Contact updated")
     cur.close()
     conn.close()
 
 
-# ──────────────────────────────────────────
+
 # 5. Search / filter contacts
-# ──────────────────────────────────────────
+
 def search_contacts():
     print("Search by:")
     print("1 - Name")
@@ -123,7 +123,7 @@ def search_contacts():
     elif choice == "3":
         cur.execute("SELECT * FROM phonebook ORDER BY first_name;")
     else:
-        print("❌ Invalid choice")
+        print("Invalid choice")
         cur.close()
         conn.close()
         return
@@ -141,9 +141,9 @@ def search_contacts():
     conn.close()
 
 
-# ──────────────────────────────────────────
+
 # 6. Delete contact
-# ──────────────────────────────────────────
+
 def delete_contact():
     print("Delete by:")
     print("1 - Name")
@@ -160,20 +160,20 @@ def delete_contact():
         phone = input("Enter phone: ").strip()
         cur.execute("DELETE FROM phonebook WHERE phone = %s;", (phone,))
     else:
-        print("❌ Invalid choice")
+        print("Invalid choice")
         cur.close()
         conn.close()
         return
 
     conn.commit()
-    print("✅ Contact deleted")
+    print("Contact deleted")
     cur.close()
     conn.close()
 
 
-# ──────────────────────────────────────────
+
 # Main menu
-# ──────────────────────────────────────────
+
 def main():
     create_table()
     while True:
@@ -200,7 +200,7 @@ def main():
             print("Goodbye!")
             break
         else:
-            print("❌ Invalid choice")
+            print("Invalid choice")
 
 
 if __name__ == "__main__":
