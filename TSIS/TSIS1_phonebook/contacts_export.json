@@ -1,0 +1,71 @@
+[
+  {
+    "id": 5,
+    "name": "Kari",
+    "email": "kqwerty@gmail.com",
+    "birthday": "2008-10-17",
+    "group": "Family",
+    "phones": [
+      {
+        "phone": "+77896541234",
+        "type": "home"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Carol",
+    "email": "carol@gmail.com",
+    "birthday": "2000-01-10",
+    "group": "Family",
+    "phones": [
+      {
+        "phone": "+77771234567",
+        "type": "home"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Bob",
+    "email": "bob@work.com",
+    "birthday": "1990-07-22",
+    "group": "Work",
+    "phones": [
+      {
+        "phone": "+77009998877",
+        "type": "work"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Messi",
+    "email": "messi@friend.com",
+    "birthday": "1987-06-24",
+    "group": "Friend",
+    "phones": [
+      {
+        "phone": "+77023432411",
+        "type": "mobile"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Alice",
+    "email": "alice@gmail.com",
+    "birthday": "1995-03-15",
+    "group": "Friend",
+    "phones": [
+      {
+        "phone": "+77001112233",
+        "type": "mobile"
+      },
+      {
+        "phone": "+77085551324",
+        "type": "home"
+      }
+    ]
+  }
+]
